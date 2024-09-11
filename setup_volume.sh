@@ -1,8 +1,27 @@
 #!/bin/bash
 
-# Create necessary directories
-mkdir -p comfyui_network/models/{checkpoints,clip,clip_vision,configs,controlnet,embeddings,loras,upscale_models,vae,insightface,unet}
+# Create base directory
+mkdir -p comfyui_network/models
 mkdir -p comfyui_network/custom_nodes
+
+# Create all subdirectories
+subdirs=(
+    "checkpoints"
+    "clip"
+    "clip_vision"
+    "configs"
+    "controlnet"
+    "embeddings"
+    "loras"
+    "upscale_models"
+    "vae"
+    "insightface"
+    "unet"
+)
+
+for subdir in "${subdirs[@]}"; do
+    mkdir -p "comfyui_network/models/$subdir"
+done
 
 # Clone custom nodes
 NODES=(
