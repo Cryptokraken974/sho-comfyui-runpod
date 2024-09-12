@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "$$$ sho-comfyui-runpod@init.sh started"
+
 # Install required pip packages
 PIP_PACKAGES=(
     "insightface"
@@ -7,13 +9,15 @@ PIP_PACKAGES=(
     "mediapipe"
 )
 
+
 for package in "${PIP_PACKAGES[@]}"; do
+    echo "$$$ sho-comfyui-runpod@init.sh Trying to install $package..."
     if pip show "$package" > /dev/null 2>&1; then
-        echo "$package is already installed, skipping."
+        echo "$$$ sho-comfyui-runpod@init.sh $package is already installed, skipping."
     else
-        echo "Installing $package..."
+        echo "$$$ sho-comfyui-runpod@init.sh Installing $package..."
         pip install "$package"
     fi
 done
 
-echo "Package installation completed successfully!"
+echo "$$$ sho-comfyui-runpod@init.sh Package installation completed successfully!"
