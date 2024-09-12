@@ -62,9 +62,7 @@ Note: The other parameters (like `PYTHON_VERSION`, `PYTORCH_VERSION`, etc.) are 
 
 To build the Docker image with a custom name:
 
-1. Make sure you're in the directory containing the `docker-compose.yml` file.
-2. Run the following command, replacing `your-custom-image-name` and `tag` with your desired image name and tag (eg. V1.0, ...):
-> docker-compose build -e DOCKER_IMAGE_NAME=your-custom-image-name:tag
+> docker build -t sho974/sho-runpod-worker-comfy:v1 .
 
 To push the image the docker hub
-> docker push your-custom-image-name:tag
+> docker push sho974/sho-runpod-worker-comfy:v1

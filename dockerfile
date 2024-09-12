@@ -18,9 +18,6 @@ RUN apt-get update -y && \
 RUN apt-get update && \
     apt-get install -y nginx
 
-# Copy the 'default' configuration file to the appropriate location
-COPY default /etc/nginx/sites-available/default
-
 ENV PATH="/usr/local/cuda/bin:${PATH}"
 
 # Install pytorch
@@ -46,4 +43,4 @@ COPY --chmod=755 init.sh /init.sh
 RUN pip3 install jupyterlab
 EXPOSE 8888
 
-command: ["/bin/bash", "-c", "init.sh && start.sh && supervisord"]
+CMD ["/bin/bash", "-c", "init.sh && start.sh && supervisord"]
