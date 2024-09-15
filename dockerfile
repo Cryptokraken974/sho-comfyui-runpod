@@ -25,22 +25,35 @@ ARG PYTORCH="2.4.0"
 ARG CUDA="121"
 RUN pip3 install --no-cache-dir -U torch==$PYTORCH torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu$CUDA
 
+# create work
+RUN mkdir /sho_workspace
+
+WORKDIR /sho_workspace
 
 # Clone the git repo and install requirements in the same RUN command to ensure they are in the same layer
 RUN git clone https://github.com/comfyanonymous/ComfyUI.git && \
     cd ComfyUI && \
     pip3 install -r requirements.txt
 
-WORKDIR /workspace
+RUN pip3 install jupyterlab jupyter_server_terminals mediapipe insightface addict
 
+# Expose the port
 EXPOSE 8188
 
-#add local files to the pod
-COPY --chmod=755 start.sh /start.sh
-COPY --chmod=755 init.sh /init.sh
-
-# Add Jupyter Notebook
-RUN pip3 install jupyterlab
+# Add Jupyter port
 EXPOSE 8888
 
-CMD ["/bin/bash", "-c", "init.sh && start.sh && supervisord"]
+#add local files to the pod
+COPY --chmod=755 start.sh .
+#COPY --chmod=755 init.sh .
+#COPY --chmod=755 entrypoint.sh .
+
+#correct windows line endings
+RUN sed -i -e 's/\r$//' ./start.sh
+#RUN sed -i -e 's/\r$//' ./init.sh
+#RUN sed -i -e 's/\r$//' ./entrypoint.sh
+
+#EXPOSE 22
+
+# Set the entrypoint script as the entrypoint for the container
+CMD ["./start.sh"]
