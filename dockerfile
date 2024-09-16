@@ -35,7 +35,8 @@ RUN git clone https://github.com/comfyanonymous/ComfyUI.git && \
     cd ComfyUI && \
     pip3 install -r requirements.txt
 
-RUN pip3 install jupyterlab jupyter_server_terminals mediapipe insightface addict
+RUN pip3 install jupyterlab jupyter_server_terminals mediapipe insightface opencv-python opencv-python-headless
+RUN pip3 install ffmpeg 
 
 # Expose the port
 EXPOSE 8188
@@ -43,10 +44,13 @@ EXPOSE 8188
 # Add Jupyter port
 EXPOSE 8888
 
-#add local files to the pod
+#add local executables files to the pod
 COPY --chmod=755 start.sh .
 #COPY --chmod=755 init.sh .
 #COPY --chmod=755 entrypoint.sh .
+
+#copy local config files to the pod
+COPY --chmod=644 extra_model_paths.yaml ./ComfyUI
 
 #correct windows line endings
 RUN sed -i -e 's/\r$//' ./start.sh
@@ -54,6 +58,32 @@ RUN sed -i -e 's/\r$//' ./start.sh
 #RUN sed -i -e 's/\r$//' ./entrypoint.sh
 
 #EXPOSE 22
+EXPOSE 22
+
+# Nodes that have to be installed before hand because of required libraries+
+RUN git clone https://github.com/ltdrdata/ComfyUI-Manager ./ComfyUI/custom_nodes/ComfyUI-Manager && \
+  pip3 install -r ./ComfyUI/custom_nodes/ComfyUI-Manager/requirements.txt
+
+RUN git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack ./ComfyUI/custom_nodes/ComfyUI-Impact-Pack && \
+  pip3 install -r ./ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt
+
+RUN git clone https://github.com/Fannovel16/comfyui_controlnet_aux ./ComfyUI/custom_nodes/comfyui_controlnet_aux && \
+  pip3 install -r ./ComfyUI/custom_nodes/comfyui_controlnet_aux/requirements.txt
+
+RUN git clone https://github.com/WASasquatch/was-node-suite-comfyui ./ComfyUI/custom_nodes/was-node-suite-comfyui && \
+  pip3 install -r ./ComfyUI/custom_nodes/was-node-suite-comfyui/requirements.txt
+
+RUN git clone https://github.com/storyicon/comfyui_segment_anything ./ComfyUI/custom_nodes/comfyui_segment_anything && \
+  pip3 install -r ./ComfyUI/custom_nodes/comfyui_segment_anything/requirements.txt
+
+RUN git clone --recursive https://github.com/receyuki/comfyui-prompt-reader-node ./ComfyUI/custom_nodes/comfyui-prompt-reader-node && \
+  pip3 install -r ./ComfyUI/custom_nodes/comfyui-prompt-reader-node/requirements.txt
+
+
+#one line example
+#RUN git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack.git && cd ComfyUI-Impact-Pack && ( pip install -r requirements.txt || true ) 
+
+  
 
 # Set the entrypoint script as the entrypoint for the container
 CMD ["./start.sh"]
