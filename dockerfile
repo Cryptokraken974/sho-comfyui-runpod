@@ -64,6 +64,9 @@ EXPOSE 22
 RUN git clone https://github.com/ltdrdata/ComfyUI-Manager ./ComfyUI/custom_nodes/ComfyUI-Manager && \
   pip3 install -r ./ComfyUI/custom_nodes/ComfyUI-Manager/requirements.txt
 
+RUN git clone https://github.com/cubiq/ComfyUI_essentials ./ComfyUI/custom_nodes/ComfyUI_essentials && \
+  pip3 install -r ./ComfyUI/custom_nodes/ComfyUI_essentials/requirements.txt
+
 RUN git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack ./ComfyUI/custom_nodes/ComfyUI-Impact-Pack && \
   pip3 install -r ./ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt
 
@@ -78,6 +81,45 @@ RUN git clone https://github.com/storyicon/comfyui_segment_anything ./ComfyUI/cu
 
 RUN git clone --recursive https://github.com/receyuki/comfyui-prompt-reader-node ./ComfyUI/custom_nodes/comfyui-prompt-reader-node && \
   pip3 install -r ./ComfyUI/custom_nodes/comfyui-prompt-reader-node/requirements.txt
+
+RUN git clone https://github.com/melMass/comfy_mtb ./ComfyUI/custom_nodes/comfy_mtb && \
+  pip3 install -r ./ComfyUI/custom_nodes/comfy_mtb/requirements.txt
+
+RUN git clone https://github.com/giriss/comfy-image-saver ./ComfyUI/custom_nodes/comfy-image-saver && \
+  pip3 install -r ./ComfyUI/custom_nodes/comfy-image-saver/requirements.txt
+
+RUN git clone https://github.com/talesofai/comfyui-browser ./ComfyUI/custom_nodes/comfyui-browser && \
+  pip3 install -r ./ComfyUI/custom_nodes/comfyui-browser/requirements.txt
+
+RUN git clone https://github.com/ltdrdata/ComfyUI-Inspire-Pack ./ComfyUI/custom_nodes/ComfyUI-Inspire-Pack && \
+  pip3 install -r ./ComfyUI/custom_nodes/ComfyUI-Inspire-Pack/requirements.txt
+
+ RUN git clone https://github.com/kijai/ComfyUI-KJNodes ./ComfyUI/custom_nodes/ComfyUI-KJNodes && \
+  pip3 install -r ./ComfyUI/custom_nodes/ComfyUI-KJNodes/requirements.txt
+
+RUN git clone https://github.com/Gourieff/comfyui-reactor-node ./ComfyUI/custom_nodes/comfyui-reactor-node && \
+  pip3 install -r ./ComfyUI/custom_nodes/comfyui-reactor-node/requirements.txt
+
+RUN git clone https://github.com/jags111/efficiency-nodes-comfyui ./ComfyUI/custom_nodes/efficiency-nodes-comfyui && \
+  pip3 install -r ./ComfyUI/custom_nodes/efficiency-nodes-comfyui/requirements.txt
+
+RUN git clone https://github.com/rgthree/rgthree-comfy ./ComfyUI/custom_nodes/rgthree-comfy && \
+  pip3 install -r ./ComfyUI/custom_nodes/rgthree-comfy/requirements.txt
+
+RUN git clone https://github.com/blib-la/blibla-comfyui-extensions ./ComfyUI/custom_nodes/blibla-comfyui-extensions
+RUN git clone https://github.com/chrisgoringe/cg-use-everywhere ./ComfyUI/custom_nodes/cg-use-everywhere
+RUN git clone https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb ./ComfyUI/custom_nodes/ComfyUI_ADV_CLIP_emb
+RUN git clone https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes ./ComfyUI/custom_nodes/ComfyUI_Comfyroll_CustomNodes
+RUN git clone https://github.com/kinfolk0117/ComfyUI_GradientDeepShrink ./ComfyUI/custom_nodes/ComfyUI_GradientDeepShrink
+RUN git clone https://github.com/cubiq/ComfyUI_IPAdapter_plus ./ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
+RUN git clone https://github.com/JPS-GER/ComfyUI_JPS-Nodes ./ComfyUI/custom_nodes/ComfyUI_JPS
+RUN git clone https://github.com/TinyTerra/ComfyUI_tinyterraNodes ./ComfyUI/custom_nodes/ComfyUI_tinyterraNodes
+RUN git clone https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet ./ComfyUI/custom_nodes/ComfyUI-Advanced-ControlNet
+RUN git clone https://github.com/pythongosssss/ComfyUI-Custom-Scripts ./ComfyUI/custom_nodes/ComfyUI-Custom-Scripts
+RUN git clone https://github.com/theUpsider/ComfyUI-Logic ./ComfyUI/custom_nodes/ComfyUI-Logic
+RUN git clone https://github.com/Nuked88/ComfyUI-N-Sidebar ./ComfyUI/custom_nodes/ComfyUI-N-Sidebar
+RUN git clone https://github.com/shiimizu/ComfyUI-TiledDiffusion ./ComfyUI/custom_nodes/ComfyUI-TiledDiffusion
+RUN git clone https://github.com/jitcoder/lora-info ./ComfyUI/custom_nodes/lora-info
 
 
 #one line example

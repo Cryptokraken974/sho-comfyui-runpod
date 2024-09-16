@@ -1,0 +1,1521 @@
+{
+  "last_node_id": 67,
+  "last_link_id": 66,
+  "nodes": [
+    {
+      "id": 42,
+      "type": "Note",
+      "pos": [
+        74.3139853815818,
+        -272.9444983331496
+      ],
+      "size": {
+        "0": 260,
+        "1": 210
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "title": "Note - Empty Latent Image",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "This node sets the image's resolution in Width and Height.\n\nNOTE: For SDXL, it is recommended to use trained values listed below:\n - 1024 x 1024\n - 1152 x 896\n - 896  x 1152\n - 1216 x 832\n - 832  x 1216\n - 1344 x 768\n - 768  x 1344\n - 1536 x 640\n - 640  x 1536"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": [
+        286.2997034508696,
+        -1079.705801928752
+      ],
+      "size": {
+        "0": 210,
+        "1": 50
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 47
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 16,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            11
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "young blond slut opening her legs showing dripping cum pussy, high resolution "
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": [
+        299.48579477917457,
+        -969.5397739440152
+      ],
+      "size": {
+        "0": 210,
+        "1": 50
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 48
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 18,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            12
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "bad anatomy, comics, cropped, cross-eyed, worst quality, low quality, painting, 3D render, drawing, crayon, sketch, graphite, impressionist, cartoon, anime, noisy, blurry, soft, deformed, ugly, lowres, low details, JPEG artifacts, airbrushed, semi-realistic, CGI, render, Blender, digital art, manga, amateur, mutilated, distorted"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 15,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1500,
+        -1090
+      ],
+      "size": {
+        "0": 210,
+        "1": 50
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 19
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 58,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            23
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "young woman smiling, sunglasses, looking at the viewer, ocean palm beach, sunset, naked, boobs, nipples"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 16,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1500,
+        -960
+      ],
+      "size": {
+        "0": 210,
+        "1": 50
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 20
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 59,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            24
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "bad quality, poor quality, doll, disfigured, jpg, toy, bad anatomy, missing limbs, missing fingers, 3d, cgi, clothes, shirt, bikini"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 60,
+      "type": "PrimitiveNode",
+      "pos": [
+        1150,
+        -930
+      ],
+      "size": {
+        "0": 300,
+        "1": 160
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            59
+          ],
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 0
+        }
+      ],
+      "title": "Refiner Negative Prompt (Text)",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "bad quality, poor quality, doll, disfigured, jpg, toy, bad anatomy, missing limbs, missing fingers, 3d, cgi, clothes, shirt, bikini"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 59,
+      "type": "PrimitiveNode",
+      "pos": [
+        1160,
+        -1140
+      ],
+      "size": {
+        "0": 300,
+        "1": 160
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            58
+          ],
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 0
+        }
+      ],
+      "title": "Refiner Positive Prompt (Text)",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "young woman smiling, sunglasses, looking at the viewer, ocean palm beach, sunset, naked, boobs, nipples"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 47,
+      "type": "PrimitiveNode",
+      "pos": [
+        416.69009723449716,
+        -150.84633090850832
+      ],
+      "size": {
+        "0": 210,
+        "1": 80
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            44
+          ],
+          "widget": {
+            "name": "end_at_step"
+          },
+          "slot_index": 0
+        }
+      ],
+      "title": "end_at_step",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        40,
+        "fixed"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 45,
+      "type": "PrimitiveNode",
+      "pos": [
+        419.69009723449716,
+        -299.8463309085083
+      ],
+      "size": {
+        "0": 210,
+        "1": 80
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            38
+          ],
+          "widget": {
+            "name": "steps"
+          }
+        }
+      ],
+      "title": "steps",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        100,
+        "fixed"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 12,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        690,
+        -1520
+      ],
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            14
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            19,
+            20
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            34
+          ],
+          "shape": 3,
+          "slot_index": 2
+        }
+      ],
+      "title": "Load Checkpoint - REFINER",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "STOIQOAfroditexl_XL31.safetensors"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 56,
+      "type": "VAEDecode",
+      "pos": [
+        1345,
+        -358
+      ],
+      "size": {
+        "0": 210,
+        "1": 50
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 54
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 66,
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            51,
+            60
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      }
+    },
+    {
+      "id": 11,
+      "type": "KSamplerAdvanced",
+      "pos": [
+        2140,
+        -980
+      ],
+      "size": {
+        "0": 300,
+        "1": 540
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 14,
+          "slot_index": 0
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 23
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 24
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 55
+        },
+        {
+          "name": "steps",
+          "type": "INT",
+          "link": 38,
+          "widget": {
+            "name": "steps"
+          },
+          "slot_index": 4
+        },
+        {
+          "name": "start_at_step",
+          "type": "INT",
+          "link": 44,
+          "widget": {
+            "name": "start_at_step"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            25
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "KSampler (Advanced) - REFINER",
+      "properties": {
+        "Node name for S&R": "KSamplerAdvanced"
+      },
+      "widgets_values": [
+        "enable",
+        901882734250201,
+        "fixed",
+        100,
+        4,
+        "dpmpp_2m_sde",
+        "sgm_uniform",
+        40,
+        10000,
+        "disable"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 54,
+      "type": "VAEEncode",
+      "pos": [
+        1900,
+        -640
+      ],
+      "size": {
+        "0": 210,
+        "1": 50
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 51
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 52
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            55
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEEncode"
+      }
+    },
+    {
+      "id": 55,
+      "type": "VAELoader",
+      "pos": [
+        1650,
+        -440
+      ],
+      "size": {
+        "0": 320,
+        "1": 60
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            52
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "sdxlVAE_sdxlVAE.safetensors"
+      ]
+    },
+    {
+      "id": 19,
+      "type": "SaveImage",
+      "pos": [
+        2870,
+        -830
+      ],
+      "size": {
+        "0": 570,
+        "1": 600
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 28
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "ComfyUI"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 17,
+      "type": "VAEDecode",
+      "pos": [
+        2550,
+        -1120
+      ],
+      "size": {
+        "0": 200,
+        "1": 50
+      },
+      "flags": {},
+      "order": 22,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 25
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 34
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            28
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 5,
+      "type": "EmptyLatentImage",
+      "pos": [
+        54.31398538158125,
+        -422.94449833314917
+      ],
+      "size": {
+        "0": 300,
+        "1": 110
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            27
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 65,
+      "type": "PreviewImage",
+      "pos": [
+        1760,
+        -170
+      ],
+      "size": [
+        210,
+        250
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 60
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        -417.4498806265256,
+        -1037.114511515549
+      ],
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            10
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            47,
+            48
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [],
+          "slot_index": 2
+        }
+      ],
+      "title": "Load Checkpoint - BASE",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "STOIQOAfroditexl_XL31.safetensors"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 58,
+      "type": "VAELoader",
+      "pos": [
+        962,
+        -201
+      ],
+      "size": {
+        "0": 320,
+        "1": 60
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            66
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "sdxlVAE_sdxlVAE.safetensors"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "KSamplerAdvanced",
+      "pos": [
+        710,
+        -920
+      ],
+      "size": [
+        300,
+        540
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 10
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 11
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 12
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 27
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            54
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "KSampler (Advanced) - BASE",
+      "properties": {
+        "Node name for S&R": "KSamplerAdvanced"
+      },
+      "widgets_values": [
+        "disable",
+        214733577208894,
+        "fixed",
+        17,
+        3,
+        "dpmpp_3m_sde",
+        "exponential",
+        0,
+        54,
+        "disable"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 14,
+      "type": "PrimitiveNode",
+      "pos": [
+        -396.4088045444492,
+        -404.91250458580055
+      ],
+      "size": {
+        "0": 300,
+        "1": 160
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            18
+          ],
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 0
+        }
+      ],
+      "title": "Negative Prompt (Text)",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "bad anatomy, comics, cropped, cross-eyed, worst quality, low quality, painting, 3D render, drawing, crayon, sketch, graphite, impressionist, cartoon, anime, noisy, blurry, soft, deformed, ugly, lowres, low details, JPEG artifacts, airbrushed, semi-realistic, CGI, render, Blender, digital art, manga, amateur, mutilated, distorted"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 13,
+      "type": "PrimitiveNode",
+      "pos": [
+        -396,
+        -605
+      ],
+      "size": {
+        "0": 300,
+        "1": 160
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            16
+          ],
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 0
+        }
+      ],
+      "title": "Positive Prompt (Text)",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "young blond slut opening her legs showing dripping cum pussy, high resolution "
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 67,
+      "type": "Note",
+      "pos": [
+        -80,
+        -1890
+      ],
+      "size": [
+        550,
+        670
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Leica I, Graflex Speed Graphic, Zeiss Ikon Contax I, Rolleiflex Automat, Exakta Kine Exakta, Argus C3, Hasselblad 1600F, Kodak Medalist, Canon S-II, Nikon F, Leica M3, Asahi Pentax, Canon FT QL, Topcon RE Super, Minolta SRT-101, Nikon F2, Olympus OM-1, Pentax K1000, Canon AE-1 Program, Nikon F3, Minolta X-700, Canon EOS-1N, Nikon F5, Contax 645, Canon EOS-1Ds Mark III, Nikon D3, Phase One P45+, Canon EOS-1D X, Nikon D800, Sony a7R II, Canon EOS R5, Sony a1, Nikon Z9\n\n\nBokeh, Lens flare, Dutch angle, Dolly zoom, Slow motion, Timelapse, Fisheye lens, Color grading, Grain, Vignette, Light leak, Anamorphic lens, Rack focus, Split screen, Silhouette, Soft focus, Hard light, High contrast, Low contrast, Desaturation, Overexposure, Underexposure, Cross-processing, Zoom blur, Motion blur, Shallow focus, Deep focus, Day for night, Flashback, Dream sequence, Cinematic lighting, Volumetric lighting, God rays, Fog, Smoke, Haze, Rain, Snow, Lens distortion, Glare, Reflection, Refraction, Chroma aberration, Film grain, Dust, Scratches, Film burns, Light streaks, Rainbow effect\n\nBeach, Forest, Desert, Mountains, Cityscape, Industrial site, Abandoned building, Rooftop, Park, Garden, Greenhouse, Museum, Art gallery, Library, Theater, Concert hall, Stadium, Sports field, Airport, Train station, Bus station, Subway station, Bridge, Tunnel, Alleyway, Street corner, Coffee shop, Restaurant, Bar, Hotel, Motel, Campground, Farm, Ranch, Vineyard, Orchard, Flower field, Waterfall, Lake, River, Pond, Ocean, Cliff, Canyon, Cave, Volcano, Glacier, Ice cave, Hot spring, Geyser, Desert oasis, Salt flats, Sand dunes, Rocky coast, Tropical island, Rainforest, Redwood forest, Autumn forest, Winter forest, Cherry blossom field, Lavender field, Sunflower field, Tulip field, Wheat field, Cornfield, Rice field, Bamboo forest, Lavender farm, Vineyard at sunset, Orchard in bloom, Flower market, Botanical garden, Japanese garden, English garden, French garden, Italian garden, Rooftop garden, Community garden, Greenhouse at night, Conservatory, Arboretum, National park, State park, City park, Sculpture garden, Zen garden, Rock garden, Water garden, Herb garden, Butterfly garden\n\n\nLiving room, Bedroom, Kitchen, Dining room, Bathroom, Attic, Basement, Library, Home office, Art studio, Music studio, Dance studio, Yoga studio, Gym, Indoor pool, Sauna, Spa, Hotel lobby, Hotel room, Restaurant, Café, Bar, Bookstore, Antique shop, Art gallery, Museum, Theater, Cinema, Concert hall, Nightclub, Train station, Airport terminal, Shopping mall, Greenhouse, Library reading room, Classroom, Lecture hall, Laboratory, Hospital room, Church, Cathedral, Mosque, Temple, Synagogue, Castle, Palace, Mansion, Apartment, Loft, Studio apartment, Tiny house, Treehouse, Igloo, Yurt, Cave house, Underground bunker, Submarine, Spaceship, Airplane cabin, Train cabin\n\nNurse, Police officer, Flight attendant, Maid, Firefighter, Doctor, Sailor/Navy officer, Astronaut, Waitress, Chef, Postal worker, Soldier, Pilot, Stewardess, Lifeguard, Cheerleader, Nun, Schoolgirl, Librarian, Construction worker\n\nSailor Moon, Harley Quinn, Wonder Woman, Black Widow, Lara Croft, Princess Peach, Zelda, Misty, Chun-Li, Miku Hatsune, Asuka Langley, Rei Ayanami, Mikasa Ackerman, Hinata Hyuga, Sakura Haruno, Rem, Ochaco Uraraka, Tifa Lockhart, Yuna, Aerith Gainsborough, D.Va, Tracer, Mercy, Leia Organa, Rey, Elsa, Anna, Hermione Granger, Katniss Everdeen, Black Cat, Catwoman, Poison Ivy, Supergirl, Batgirl, Morrigan Aensland, Bayonetta, 2B, Jill Valentine, Ada Wong, Samus Aran, Aloy, Elizabeth, Ciri, Triss Merigold, Yennefer, Cammy, Mai Shiranui, Bulma, Android 18, Nami, Nico Robin, Rukia Kuchiki, Orihime Inoue"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      10,
+      4,
+      0,
+      10,
+      0,
+      "MODEL"
+    ],
+    [
+      11,
+      6,
+      0,
+      10,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      12,
+      7,
+      0,
+      10,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      14,
+      12,
+      0,
+      11,
+      0,
+      "MODEL"
+    ],
+    [
+      16,
+      13,
+      0,
+      6,
+      1,
+      "STRING"
+    ],
+    [
+      18,
+      14,
+      0,
+      7,
+      1,
+      "STRING"
+    ],
+    [
+      19,
+      12,
+      1,
+      15,
+      0,
+      "CLIP"
+    ],
+    [
+      20,
+      12,
+      1,
+      16,
+      0,
+      "CLIP"
+    ],
+    [
+      23,
+      15,
+      0,
+      11,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      24,
+      16,
+      0,
+      11,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      25,
+      11,
+      0,
+      17,
+      0,
+      "LATENT"
+    ],
+    [
+      27,
+      5,
+      0,
+      10,
+      3,
+      "LATENT"
+    ],
+    [
+      28,
+      17,
+      0,
+      19,
+      0,
+      "IMAGE"
+    ],
+    [
+      34,
+      12,
+      2,
+      17,
+      1,
+      "VAE"
+    ],
+    [
+      38,
+      45,
+      0,
+      11,
+      4,
+      "INT"
+    ],
+    [
+      44,
+      47,
+      0,
+      11,
+      5,
+      "INT"
+    ],
+    [
+      47,
+      4,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      48,
+      4,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      51,
+      56,
+      0,
+      54,
+      0,
+      "IMAGE"
+    ],
+    [
+      52,
+      55,
+      0,
+      54,
+      1,
+      "VAE"
+    ],
+    [
+      54,
+      10,
+      0,
+      56,
+      0,
+      "LATENT"
+    ],
+    [
+      55,
+      54,
+      0,
+      11,
+      3,
+      "LATENT"
+    ],
+    [
+      58,
+      59,
+      0,
+      15,
+      1,
+      "STRING"
+    ],
+    [
+      59,
+      60,
+      0,
+      16,
+      1,
+      "STRING"
+    ],
+    [
+      60,
+      56,
+      0,
+      65,
+      0,
+      "IMAGE"
+    ],
+    [
+      66,
+      58,
+      0,
+      56,
+      1,
+      "VAE"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "Base Prompt",
+      "bounding": [
+        266,
+        -1161,
+        252,
+        361
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Text Prompts",
+      "bounding": [
+        -416,
+        -688,
+        338,
+        468
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Load in BASE SDXL Model",
+      "bounding": [
+        -428,
+        -1117,
+        388,
+        202
+      ],
+      "color": "#a1309b",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Load in REFINER SDXL Model",
+      "bounding": [
+        670,
+        -1610,
+        390,
+        218
+      ],
+      "color": "#a1309b",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Empty Latent Image",
+      "bounding": [
+        33,
+        -497,
+        339,
+        443
+      ],
+      "color": "#a1309b",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Step Control",
+      "bounding": [
+        401,
+        -389,
+        257,
+        361
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Refiner Group",
+      "bounding": [
+        1150,
+        -1290,
+        573,
+        552
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5131581182307067,
+      "offset": [
+        724.8216047779582,
+        2050.319716333945
+      ]
+    },
+    "groupNodes": {
+      "Refiner Prompt": {
+        "nodes": [
+          {
+            "type": "PrimitiveNode",
+            "pos": [
+              1147,
+              -1103
+            ],
+            "size": {
+              "0": 300,
+              "1": 160
+            },
+            "flags": {},
+            "order": 17,
+            "mode": 0,
+            "outputs": [
+              {
+                "name": "STRING",
+                "type": "STRING",
+                "links": [],
+                "widget": {
+                  "name": "text"
+                },
+                "slot_index": 0
+              }
+            ],
+            "title": "Negative Prompt (Text)",
+            "properties": {
+              "Run widget replace on values": false
+            },
+            "color": "#322",
+            "bgcolor": "#533",
+            "index": 0
+          },
+          {
+            "type": "PrimitiveNode",
+            "pos": [
+              1154,
+              -1316
+            ],
+            "size": {
+              "0": 300,
+              "1": 160
+            },
+            "flags": {},
+            "order": 18,
+            "mode": 0,
+            "outputs": [
+              {
+                "name": "STRING",
+                "type": "STRING",
+                "links": [],
+                "widget": {
+                  "name": "text"
+                },
+                "slot_index": 0
+              }
+            ],
+            "title": "Positive Prompt (Text)",
+            "properties": {
+              "Run widget replace on values": false
+            },
+            "color": "#232",
+            "bgcolor": "#353",
+            "index": 1
+          },
+          {
+            "type": "CLIPTextEncode",
+            "pos": [
+              1496,
+              -1134
+            ],
+            "size": {
+              "0": 210,
+              "1": 54
+            },
+            "flags": {},
+            "order": 21,
+            "mode": 0,
+            "inputs": [
+              {
+                "name": "clip",
+                "type": "CLIP",
+                "link": null
+              },
+              {
+                "name": "text",
+                "type": "STRING",
+                "link": null,
+                "widget": {
+                  "name": "text"
+                },
+                "slot_index": 1
+              }
+            ],
+            "outputs": [
+              {
+                "name": "CONDITIONING",
+                "type": "CONDITIONING",
+                "links": [],
+                "slot_index": 0
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "CLIPTextEncode"
+            },
+            "widgets_values": [
+              "bad quality, poor quality, doll, disfigured, jpg, toy, bad anatomy, missing limbs, missing fingers, 3d, cgi, "
+            ],
+            "color": "#322",
+            "bgcolor": "#533",
+            "index": 2
+          },
+          {
+            "type": "CLIPTextEncode",
+            "pos": [
+              1490,
+              -1262
+            ],
+            "size": {
+              "0": 210,
+              "1": 54
+            },
+            "flags": {},
+            "order": 22,
+            "mode": 0,
+            "inputs": [
+              {
+                "name": "clip",
+                "type": "CLIP",
+                "link": null
+              },
+              {
+                "name": "text",
+                "type": "STRING",
+                "link": null,
+                "widget": {
+                  "name": "text"
+                },
+                "slot_index": 1
+              }
+            ],
+            "outputs": [
+              {
+                "name": "CONDITIONING",
+                "type": "CONDITIONING",
+                "links": [],
+                "slot_index": 0
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "CLIPTextEncode"
+            },
+            "widgets_values": [
+              "young woman smiling, sunglasses, looking at the viewer, ocean palm beach, sunset, "
+            ],
+            "color": "#232",
+            "bgcolor": "#353",
+            "index": 3
+          }
+        ],
+        "links": [
+          [
+            null,
+            1,
+            2,
+            0,
+            12,
+            "CLIP"
+          ],
+          [
+            0,
+            0,
+            2,
+            1,
+            60,
+            "STRING"
+          ],
+          [
+            null,
+            1,
+            3,
+            0,
+            12,
+            "CLIP"
+          ],
+          [
+            1,
+            0,
+            3,
+            1,
+            59,
+            "STRING"
+          ]
+        ],
+        "external": [
+          [
+            2,
+            0,
+            "CONDITIONING"
+          ],
+          [
+            3,
+            0,
+            "CONDITIONING"
+          ]
+        ]
+      }
+    }
+  },
+  "version": 0.4
+}
